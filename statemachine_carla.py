@@ -37,19 +37,22 @@ class ParkingFail(State):
         return f"ParkingFail"
 
 
+import matplotlib.pyplot as plt
+
+
 class ParkingSucess(State):
     def handle(self, vehicle: Vehicle):
         # vehicle.step()
         print(f"Current state is : {vehicle.state}")
         print("\033[32m=== Parking Success. ===\033[0m")
 
-        # plt.figure(10, figsize=[8, 10])
-        # plt_utils.plot_control(vehicle.local_reference_trajectory)
-        # plt_utils.plot_control(vehicle.local_tracking_trajectory)
-        # plt.show()
-
         vehicle.env.close()
         vehicle.gui.close()
+
+        plt.figure(10, figsize=[8, 10])
+        plt_utils.plot_control(vehicle.local_reference_trajectory)
+        plt_utils.plot_control(vehicle.local_tracking_trajectory)
+        plt.show()
 
     def __repr__(self) -> str:
         return f"ParkingSucess"
