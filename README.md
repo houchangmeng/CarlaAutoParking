@@ -3,9 +3,13 @@
 APA demo in Carla Simulator.
 
 ```{bash}
-git clone ...
-cd ./CarlaAutoParking
-python3 statemachine_carla.py
+git clone git@github.com:houchangmeng/CarlaAutoParking.git  
+
+# Run PNC
+python3 ./CarlaAutoParking/statemachine_carla.py
+
+# Run Parking slot detection
+python3 ./CarlaAutoParking/parking_rectangle_detection.py
 ```
 ---
 carla 0.9.13
