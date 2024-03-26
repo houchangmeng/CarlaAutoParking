@@ -185,17 +185,17 @@ class Planing(State):
             local_center_ref_traj, vehicle.env.start_global_se2
         )
 
-        file_name = "carla_se2state_list_local_rear.pickle"
-        plt_utils.save_pickle_file(local_rear_ref_traj, file_name)
+        # file_name = "carla_se2state_list_local_rear.pickle"
+        # plt_utils.save_pickle_file(local_rear_ref_traj, file_name)
 
-        file_name = "carla_se2state_list_local_center.pickle"
-        plt_utils.save_pickle_file(local_center_ref_traj, file_name)
+        # file_name = "carla_se2state_list_local_center.pickle"
+        # plt_utils.save_pickle_file(local_center_ref_traj, file_name)
 
-        file_name = "carla_se2state_list_global_rear.pickle"
-        plt_utils.save_pickle_file(global_rear_ref_traj, file_name)
+        # file_name = "carla_se2state_list_global_rear.pickle"
+        # plt_utils.save_pickle_file(global_rear_ref_traj, file_name)
 
-        file_name = "carla_se2state_list_global_center.pickle"
-        plt_utils.save_pickle_file(global_center_ref_traj, file_name)
+        # file_name = "carla_se2state_list_global_center.pickle"
+        # plt_utils.save_pickle_file(global_center_ref_traj, file_name)
 
         """
         Load trajectory.

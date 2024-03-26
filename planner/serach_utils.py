@@ -263,6 +263,7 @@ def trajectory_add_zero_velocity(path: List[SE2State], insert_num=5):
     if len(path) < 3:
         raise ValueError("check path or interval number.")
 
+    start_t = path[0].t
     dt = path[1].t - path[0].t
     N = len(path)
     new_path: List[SE2State] = []
@@ -283,7 +284,7 @@ def trajectory_add_zero_velocity(path: List[SE2State], insert_num=5):
     new_N = len(new_path)
 
     for j in range(new_N):
-        new_path[j].t = dt * j
+        new_path[j].t = dt * j + start_t
 
     return new_path
 
