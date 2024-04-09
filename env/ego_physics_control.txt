@@ -1,0 +1,27 @@
+VehiclePhysicsControl(
+    torque_curve=[Vector2D(x=-9.310944, y=743.000000), Vector2D(x=9000.000000, y=743.000000), Vector2D(x=9500.000000, y=660.000000), Vector2D(x=10400.000000, y=605.000000), Vector2D(x=12500.000000, y=528.000000), Vector2D(x=15000.000000, y=502.000000)], 
+    max_rpm=15000.000000, 
+    moi=1.000000, 
+    damping_rate_full_throttle=0.150000, 
+    damping_rate_zero_throttle_clutch_engaged=2.000000, 
+    damping_rate_zero_throttle_clutch_disengaged=0.350000, 
+    use_gear_autobox=True, 
+    gear_switch_time=0.000000, 
+    clutch_strength=10.000000, 
+    final_ratio=9.000000, 
+    forward_gears=[GearPhysicsControl(ratio=1.000000, down_ratio=0.000000, up_ratio=0.000000)], 
+    mass=1845.000000, 
+    drag_coefficient=0.150000, 
+    center_of_mass=Location(x=0.450000, y=0.000000, z=-0.300000), 
+    steering_curve=[Vector2D(x=0.000000, y=1.000000), Vector2D(x=20.000000, y=0.900000), Vector2D(x=60.000000, y=0.800000), Vector2D(x=120.000000, y=0.700000)], 
+    wheels=[
+        WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=69.999992, radius=37.000000, max_brake_torque=700.000000, max_handbrake_torque=0.000000, lat_stiff_max_load=3.000000, lat_stiff_value=20.000000, long_stiff_value=3000.000000, position=Vector3D(x=-66.658493, y=-2358.176025, z=78.727486)), 
+        WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=69.999992, radius=37.000000, max_brake_torque=700.000000, max_handbrake_torque=0.000000, lat_stiff_max_load=3.000000, lat_stiff_value=20.000000, long_stiff_value=3000.000000, position=Vector3D(x=-233.341385, y=-2358.175781, z=78.727493)), 
+        WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=0.000000, radius=37.000000, max_brake_torque=700.000000, max_handbrake_torque=1400.000000, lat_stiff_max_load=3.000000, lat_stiff_value=20.000000, long_stiff_value=3000.000000, position=Vector3D(x=-66.658638, y=-2658.640625, z=78.727997)), 
+        WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=0.000000, radius=37.000000, max_brake_torque=700.000000, max_handbrake_torque=1400.000000, lat_stiff_max_load=3.000000, lat_stiff_value=20.000000, long_stiff_value=3000.000000, position=Vector3D(x=-233.341522, y=-2658.640381, z=78.727570))], 
+        use_sweep_wheel_collision=0)
+
+最大制动力 2800
+发动机转矩 743 - 500 N*m ： 15000：9000 max_rpm
+mass 1845
+
