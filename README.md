@@ -13,7 +13,7 @@ git clone git@github.com:houchangmeng/CarlaAutoParking.git
 # Run PNC
 python3 ./CarlaAutoParking/statemachine_carla.py
 
-# Then, Click a feasible parking slot in matplotlib window.
+# Then, Click a feasible(green rectangle) parking slot in matplotlib window.
 ```
 
 ```{bash}
