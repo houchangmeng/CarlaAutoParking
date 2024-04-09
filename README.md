@@ -8,6 +8,8 @@ git clone git@github.com:houchangmeng/CarlaAutoParking.git
 # Run PNC
 python3 ./CarlaAutoParking/statemachine_carla.py
 
+# Then, click a feasible parking slot in matplotlib window.
+
 # Run Parking slot detection
 python3 ./CarlaAutoParking/parking_rectangle_detection.py
 ```
